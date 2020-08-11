@@ -1,10 +1,10 @@
 import React from 'react';
-// import Accordion from '@salesforce/design-system-react/components/accordion'; 
-// import AccordionPanel from '@salesforce/design-system-react/components/accordion/panel'; 
-// import IconSettings from '@salesforce/design-system-react/components/icon-settings'; 
-// import Dropdown from '@salesforce/design-system-react/components/menu-dropdown'; 
+import Accordion from '@salesforce/design-system-react/components/accordion'; 
+import AccordionPanel from '@salesforce/design-system-react/components/accordion/panel'; 
+import IconSettings from '@salesforce/design-system-react/components/icon-settings'; 
+import Dropdown from '@salesforce/design-system-react/components/menu-dropdown'; 
 
-import {Accordion, AccordionPanel, IconSettings, Dropdown} from '@salesforce/design-system-react';
+// import {Accordion, AccordionPanel, IconSettings, Dropdown} from '@salesforce/design-system-react';
 
 class Example extends React.Component {
 	constructor(props) {
