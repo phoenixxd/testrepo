@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+
 module.exports = {
     entry: {
         bundle: './src/index.js'
@@ -14,7 +15,7 @@ module.exports = {
     },
     mode: 'development',
     output: {
-        path: path.join(__dirname, 'build'),
+        path: path.join(__dirname, 'public'),
         filename: '[name].js',
         publicPath: '/'
     },
@@ -30,16 +31,8 @@ module.exports = {
                     loader: 'babel-loader',
                     options: {
                         presets: [
-                            ['@babel/preset-env', {
-                                debug: true,
-                                // Configure how @babel/preset-env handles polyfills from core-js.
-                                // https://babeljs.io/docs/en/babel-preset-env
-                                useBuiltIns: 'usage',
-
-                                // Specify the core-js version. Must match the version in package.json
-                                corejs: 3,
-                            }],
-                            "@babel/react"
+                            '@babel/preset-env',
+                            "@babel/preset-react"
                         ],
                         plugins: [
                             "@babel/plugin-proposal-class-properties"
